@@ -1,0 +1,54 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #eceff1;
+}
+
+.board-row {
+  display: flex;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: #ffffff;
+  border: 2px solid #cfd8dc;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.square:hover {
+  background-color: #eceff1;
+}
+
+.square:active {
+  transform: scale(0.95);
+}
+
+.status {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #455a64;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  .square {
+    width: 80px;
+    height: 80px;
+    font-size: 20px;
+  }
+}
